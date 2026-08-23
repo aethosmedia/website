@@ -77,7 +77,25 @@ src/
   dismissed on internal navigation.
 - The custom cursor auto-disables below 860px (touch devices) and falls
   back to the native cursor.
-- All scroll animations respect standard browser reduced-motion behavior
-  can be added by wrapping GSAP calls with a `matchMedia` check in
-  `Reveal.tsx` / `ParallaxImage.tsx` if you want to fully honor
-  `prefers-reduced-motion`.
+- All motion (intro, scroll reveals, parallax, magnetic buttons, custom
+  cursor) checks `prefers-reduced-motion` via `src/lib/motion.ts` and
+  falls back to static/instant states, including the native OS cursor.
+
+## Deploying to Vercel
+
+No project changes are needed beyond what's already here — push to a
+GitHub repo and import it at vercel.com (Vercel auto-detects Next.js
+and sets the correct build/output settings).
+
+Once you attach a custom domain, set an environment variable in
+Vercel's Project Settings → Environment Variables so Open Graph/Twitter
+share previews use your real domain instead of the default
+`*.vercel.app` URL:
+
+```
+
+```
+
+Without it, the site falls back to Vercel's own `VERCEL_URL` (set
+automatically at build time), so previews still work correctly on the
+default `.vercel.app` URL even before you add a domain.

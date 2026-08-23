@@ -29,10 +29,28 @@ const mono = IBM_Plex_Mono({
   display: "swap",
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+
 export const metadata: Metadata = {
   title: `${brand.name} — Creative Studio`,
   description:
     "Aethos Media is a hands-on creative studio building thoughtful, strategic brand and web experiences for ambitious companies.",
+  openGraph: {
+    title: `${brand.name} — Creative Studio`,
+    description:
+      "A hands-on creative studio building thoughtful, strategic brand and web experiences for ambitious companies.",
+    url: siteUrl,
+    siteName: brand.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${brand.name} — Creative Studio`,
+    description:
+      "A hands-on creative studio building thoughtful, strategic brand and web experiences for ambitious companies.",
+  },
 };
 
 export default function RootLayout({
