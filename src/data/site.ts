@@ -93,7 +93,7 @@ export const testimonials = [
     quote:
       "Fast, thoughtful, and deeply collaborative. Aethos felt like part of our team from day one.",
     name: "Arjun Das",
-    role: "Project Manager at AH Holding",
+    role: "Owner of AH Holding",
     image:
       "/images/testimonials/arjun.png",
   },
