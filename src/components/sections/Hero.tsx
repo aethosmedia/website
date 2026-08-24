@@ -48,16 +48,16 @@ export default function Hero() {
           ===================================================== */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero.jpg"
+          src="/images/hero1.jpg"
           alt="Abstract studio visual"
           className="
             h-full
             w-full
             object-cover
-            opacity-30
+            opacity-40
             transition-all
             duration-700
-            dark:opacity-30
+            dark:opacity-70
           "
         />
       </div>

@@ -64,9 +64,9 @@ export const projects = [
     category: "Web design, Development",
     year: "2025",
     image:
-      "https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1600&auto=format&fit=crop",
+      "/images/projects/cl-1.png",
     summary:
-      "A product marketing site for a hardware startup, built around motion that mirrors the device's own precision.",
+      "A B2B EMS platform for a clothing brand, designed to help employees to manage their leads and orders with ease.",
   },
   {
     slug: "AH Holding",
@@ -74,7 +74,7 @@ export const projects = [
     category: "Branding, Campaign",
     year: "2024",
     image:
-      "https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1600&auto=format&fit=crop",
+      "/images/projects/ah-holding.png",
     summary:
       "Launch identity and campaign system for a fintech brand entering a crowded, skeptical market.",
   },
@@ -84,27 +84,27 @@ export const testimonials = [
   {
     quote:
       "Working with Aethos felt less like hiring a design agency and more like gaining a strategic partner.",
-    name: "Arjun Das",
-    role: "Ex-Founder & CEO at Clothief",
+    name: "Probash Dutta",
+    role: "Ex-Founder & COO at Clothief",
     image:
-      "/images/testimonials/Arjun.png",
+      "/images/testimonials/probash.jpg",
   },
   {
     quote:
       "Fast, thoughtful, and deeply collaborative. Aethos felt like part of our team from day one.",
-    name: "Naomi Voss",
-    role: "Creative Director at Antra",
+    name: "Arjun Das",
+    role: "Project Manager at AH Holding",
     image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
+      "/images/testimonials/arjun.png",
   },
-  {
-    quote:
-      "Minimal in form but rich in intention. They helped us express our brand with clarity and confidence.",
-    name: "Mark Williams",
-    role: "Head of Brand at Velith",
-    image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
-  },
+  // {
+  //   quote:
+  //     "Minimal in form but rich in intention. They helped us express our brand with clarity and confidence.",
+  //   name: "Mark Williams",
+  //   role: "Head of Brand at Velith",
+  //   image:
+  //     "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+  // },
 ];
 
 export const pricing = [
