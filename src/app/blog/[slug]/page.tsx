@@ -9,21 +9,25 @@ export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({
+type ParamsPromise = Promise<{ slug: string }>;
+
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
-}): Metadata {
-  const post = blogPosts.find((p) => p.slug === params.slug);
+  params: ParamsPromise;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
   return { title: post ? `${post.title} — ${brand.name}` : brand.name };
 }
 
-export default function BlogDetailPage({
+export default async function BlogDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: ParamsPromise;
 }) {
-  const post = blogPosts.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
 
   return (

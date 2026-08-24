@@ -6,7 +6,7 @@ export default function Pricing() {
     <section className="border-t border-line px-6 py-20 md:px-10 md:py-28">
       <Reveal className="mb-16">
         <p className="eyebrow mb-3">Pricing</p>
-        <h2 className="max-w-xl font-display text-[9vw] uppercase leading-[0.95] tracking-tightest text-ink md:text-5xl">
+        <h2 className="max-w-xl font-display text-[7vw] uppercase leading-[0.95] tracking-tightest text-ink md:text-5xl">
           Straightforward, affordable.
         </h2>
       </Reveal>
